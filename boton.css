@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    
+  }
+  .title {
+    color: white;
+    font: oblique bold 250% cursive;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .box {
+    height: 100px;
+    width: 300px;
+    background: #000;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    margin: 15px;
+    transition: 0.5s;
+  }
+  .box:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+  }
+  .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(20px);
+  }
+  .box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  span {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: rgb(0, 0, 0, 0.5);
+    z-index: 5;
+  }
+  span:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255, 255, 255, 0.2);
+  }
+  .content {
+    z-index: 10;
+    color: #fff;
+  }
+  .content p {
+    font-size: 0.8em;
+    margin-top: 50px;
+  }
+  
+  .bluish:after {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+  }
+  
+  .bluish:before {
+    background: linear-gradient(315deg, #03a9f4, #ff0058);
+  }
+  
+  .redish:after {
+    background: linear-gradient(-45deg, red, yellow);
+  }
+  
+  .redish:before {
+    background: linear-gradient(-45deg, red, yellow);
+  }
+  .greenish:after {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+  }
+  
+  .greenish:before {
+    background: linear-gradient(315deg, #4dff03, #00d0ff);
+  }
+  
+  a {
+    text-decoration: none;
+   
+    border-radius: 15px;
+    padding: 0.5em;
+    width: max-content;
+    color: white;
+  }
+  
+  
